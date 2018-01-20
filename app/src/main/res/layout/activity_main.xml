@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.demo.custom.customview.MainActivity">
+
+    <com.demo.custom.customview.MytopBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        custom:leftBackground="@drawable/blue_button"
+        custom:leftText="Back"
+        custom:leftTextColor="#FFFFFF"
+        custom:rightBackground="@drawable/blue_button"
+        custom:rightText="More"
+        custom:rightTextColor="#FFFFFF"
+        custom:title="自定义标题"
+        custom:titleTextColor="#123412"
+        custom:titleTextSize="8sp"/>
+
+
+    <com.demo.custom.customview.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:textSize="25sp" />
+
+    <com.demo.custom.customview.MyTextView2
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Android TextView"
+        android:textSize="25sp" />
+</LinearLayout>
